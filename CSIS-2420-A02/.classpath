@@ -4,5 +4,7 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="lib" path="F:/School/!CSIS 2420 - Algorithms &amp; Data Structure/algs4.jar"/>
 	<classpathentry kind="lib" path="F:/School/!CSIS 2420 - Algorithms &amp; Data Structure/stdlib.jar"/>
+	<classpathentry kind="lib" path="lib/algs4.jar"/>
+	<classpathentry kind="lib" path="lib/stdlib.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
