@@ -11,7 +11,7 @@ public class Deque<Item> implements Iterable<Item> {
 	
 	// is the deque empty?
 	public boolean isEmpty() {
-		
+		//
 		return false;
 		
 	}
