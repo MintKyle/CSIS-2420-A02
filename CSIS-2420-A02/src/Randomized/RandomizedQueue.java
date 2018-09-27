@@ -4,21 +4,21 @@ import java.util.Iterator;
 //import stdlib.jar;
 
 public class RandomizedQueue<Item> implements Iterable<Item> {
-	
+	private Item[] queue;
+	private int n = 0;
 	// construct an empty randomized queue
 	public RandomizedQueue() {
-		
+		queue = (Item[]) new Object[1];
 	}
 	
 	// is the queue empty?
 	public boolean isEmpty() {
-		return false;
-		
+		return n == 0;
 	}
 	
 	// return the number of items on the queue
 	public int size() {
-		return 0;
+		return n;
 		
 	}
 	
