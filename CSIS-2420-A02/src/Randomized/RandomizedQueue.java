@@ -1,6 +1,7 @@
 package Randomized;
 
 import java.util.Iterator;
+import java.util.NoSuchElementException;
 
 import edu.princeton.cs.algs4.StdRandom;
 //import stdlib.jar;
@@ -61,7 +62,6 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
 			}
 			return toBeRemoved;
 		}
-		
 	}
 	
 	// return (but do not delete) a random item
@@ -72,13 +72,48 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
 		else {
 			return queue[StdRandom.uniform(0,n)];
 		}
-		
 	}
 	
 	// return an independent iterator over items in random order
 	public Iterator<Item> iterator() {
-		return null;
+		return new RandomizedQueueIterator();
 		
+	}
+	
+	// the independent iterator
+	private class RandomizedQueueIterator implements Iterator<Item> {
+		private int i = 0;
+		private int[] index;
+		public RandomizedQueueIterator() {
+			index = new int[n];
+			for (int j = 0; j < index.length; j++) {
+				index[j] = j;
+			}
+			StdRandom.shuffle(index);
+		}
+		
+		//returns true if iteration has more elements.
+		@Override
+		public boolean hasNext() {
+			return i < n;
+		}
+
+		//returns the next item in the iteration
+		@Override
+		public Item next() {
+			if (!hasNext()) {
+				throw new NoSuchElementException();
+			}
+			else {
+				return queue[index[i++]];
+			}
+		}
+		
+		//removes from the underlying collecction the last element returned by this iterator.
+		@Override
+		public void remove() {
+			throw new UnsupportedOperationException();
+		}
 	}
 	
 	// unit testing
