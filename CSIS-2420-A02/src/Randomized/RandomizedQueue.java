@@ -109,7 +109,7 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
 			}
 		}
 		
-		//removes from the underlying collecction the last element returned by this iterator.
+		//removes from the underlying collection the last element returned by this iterator.
 		@Override
 		public void remove() {
 			throw new UnsupportedOperationException();
