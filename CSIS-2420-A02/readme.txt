@@ -59,7 +59,7 @@ Deque:              ~  _____  bytes
  *  the protocol as described on the assignment page. Give one
  *  sentence explaining what each of you contributed.
  *****************************************************************************/
-
+Jared: For me, I wrote the RandomizedQueue.java file, and helped with adding comments in Subset and Deque.
 
 
 /******************************************************************************
