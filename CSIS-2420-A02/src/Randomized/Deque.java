@@ -1,5 +1,4 @@
 //Kyle Fackrell, Jared Hunter
-
 package Randomized;
 
 import java.util.Iterator;

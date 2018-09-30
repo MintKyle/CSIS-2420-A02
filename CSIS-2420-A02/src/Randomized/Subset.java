@@ -1,3 +1,4 @@
+//Kyle Fackrell, Jared Hunter
 package Randomized;
 
 import edu.princeton.cs.algs4.StdIn;

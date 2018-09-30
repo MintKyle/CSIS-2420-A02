@@ -1,3 +1,4 @@
+//Jared Hunter, Kyle Fackrell
 package Randomized;
 
 import java.util.Iterator;
