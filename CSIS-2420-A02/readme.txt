@@ -19,7 +19,9 @@ Programming Assignment 2: Deques and Randomized Queues
  *  Which data structure did you choose (array, linked list, etc.)
  *  and why?
  *****************************************************************************/
- 
+For both queues (randomized and deque) we implemented an iterable to give them
+independent iterators over items in a specific order.
+
 For Deque we used a doubly linked list to easily access the first
 and last items as well as the neighboring items using next and prev. 
 For randomizedQueue we used an array since arrays are are more efficient 
@@ -66,6 +68,7 @@ None
  *  sentence explaining what each of you contributed.
  *****************************************************************************/
 Jared: For me, I wrote the RandomizedQueue.java file, and helped with adding comments in Subset and Deque.
+
 Kyle: I did the Deque.java and Subset.java files.
 
 /******************************************************************************
@@ -77,6 +80,10 @@ Kyle: I kept getting ArrayIndexOutOfBoundsException when using
 puting an integer in program arguments (which ends up being k), entering k or more
 strings in the console and hitting enter then ctrl+z. I feel like I got it to work 
 by accident so I'm not certain if this was the right way to do it. 
+
+Jared: When we're sharing code through GitHub, we ran problems with pushing our code
+into the master branch of our repository. Sometimes we would have to force to overwrite
+our branch so that our completed files would render incomplete again.
 
 /******************************************************************************
  *  List any other comments here. Feel free to provide any feedback   
